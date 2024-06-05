@@ -1,0 +1,48 @@
+<odoo>
+    <record id="product_action" model="ir.actions.act_window">
+        <field name="name">产品</field>
+        <field name="res_model">product</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="product_view_tree" model="ir.ui.view">
+        <field name="name">product.view.tree</field>
+        <field name="model">product</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field name="sequence" widget="handle"/>
+                <field name="account_id" optional="show"/>
+                <field name="name"/>
+                <field name="unit"/>
+                <field name="quantity"/>
+                <field name="amount"/>
+                <field name="price"/>
+                <field name="is_buy" optional="show"/>
+                <field name="is_sell" optional="show"/>
+                <field name="is_product" optional="show"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="product_view_form" model="ir.ui.view">
+        <field name="name">product.view.form</field>
+        <field name="model">product</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="sequence"/>
+                    <field name="account_id"/>
+                    <field name="name"/>
+                    <field name="unit"/>
+                    <field name="quantity"/>
+                    <field name="amount"/>
+                    <field name="price"/>
+                    <field name="is_buy"/>
+                    <field name="is_sell"/>
+                    <field name="is_product"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+</odoo>

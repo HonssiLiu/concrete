@@ -1,0 +1,7 @@
+<odoo>
+    <menuitem id="concrete_menu_root" name="混凝土">
+        <menuitem id="concrete_menu_setting" name="设置">
+            <menuitem id="concrete_product" action="concrete_product_action"/>
+        </menuitem>
+    </menuitem>
+</odoo>
